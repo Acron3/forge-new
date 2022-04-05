@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function Carousel() {
   const [value, setValue] = useState({
       'step' : "STEP 1",
-      'text' : "All deposits are pooled",
-      'textSecond': "The liquidity pooled enables smart transactions and access to complex FOR token development strategies"
+      'text' : "ALL DEPOSITS ARE POOLED",
+      'textSecond': "THE LIQUIDITY POOLED ENABLES SMART TRANSACTIONS AND ACCESS TO COMPLEX FOR TOKEN DEVELOPMENT STRATEGIES"
   });
   return (
     <div>
@@ -38,8 +38,8 @@ export default function Carousel() {
 
             <div
               className={
-                "w-1/4 before:block before:absolute before:content-[' '] border-b-4 hover:cursor-pointer border-" +
-                (value["step"] == "STEP 2" ? "white" : "gray-500")
+                "w-1/4 before:block before:absolute before:content-[' '] border-b-4 hover:cursor-pointer " +
+                (value["step"] === "STEP 2" ? "border-white" : "border-gray-500")
               }
               onClick={() =>
                 setValue({
@@ -54,7 +54,7 @@ export default function Carousel() {
             <div
               className={
                 "w-1/4 before:block before:absolute before:content-[' '] border-b-4 hover:cursor-pointer border-" +
-                (value["step"] == "STEP 3" ? "white" : "gray-500")
+                (value["step"] === "STEP 3" ? "white" : "gray-500")
               }
               onClick={() =>
                 setValue({
@@ -69,7 +69,7 @@ export default function Carousel() {
             <div
               className={
                 "w-1/4 before:block before:absolute before:content-[' '] border-b-4 hover:cursor-pointer border-" +
-                (value["step"] == "STEP 4" ? "white" : "gray-500")
+                (value["step"] === "STEP 4" ? "white" : "gray-500")
               }
               onClick={() =>
                 setValue({

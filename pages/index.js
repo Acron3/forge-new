@@ -186,7 +186,7 @@ export default function Home(){
                             <p className="text-xs">Forge Network Community</p> 
 
                     </div>
-                    <div className="border border-violet-500 border-2 rounded-xl py-5 px-7 glow hover:scale-105 hover:cursor-pointer">
+                    <div onClick={() => window.open('https://medium.com/@forgenetwork')} className="border border-violet-500 border-2 rounded-xl py-5 px-7 glow hover:scale-105 hover:cursor-pointer">
                         
                             <h1 className="text-base font-bold"><FontAwesomeIcon 
                                 icon={faMediumM}

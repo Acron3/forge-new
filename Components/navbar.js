@@ -20,14 +20,14 @@ export default function Navbar(){
                     </div>
                     <div className="flex-1 flex items-center md:justify-between sm:items-stretch justify-center">
                         <div className="flex-shrink-0 flex items-center">
-                            {/* <h1 className="text-indigo-800 font-bold text-xl">FORGE NETWORK</h1> */}
-                            <div className="inline">
+                            <h1 className="text-indigo-800 font-bold text-xl">FORGE NETWORK</h1>
+                            {/* <div className="inline">
                                 <Image
                                     src={LogoTeks}
                                     alt="Logo Tulisan"
                                     layout = 'responsive'
                                 />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="hidden sm:block sm:ml-6 space-x-7">
                         <div className="flex space-x-4">
